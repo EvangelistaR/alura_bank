@@ -1,17 +1,7 @@
 class Negociacao{
-
-    // Definição das propriedades
-    // Apenas métodos da própria classe poderão alterar as propriedades
-    private _data; 
-    private _quantidade;
-    private _valor;
-
     // Usando o underline convenciona que essas propriedades não podem ser acessadas
-    constructor(data, quantidade, valor){
-        this._data = data;
-        this._quantidade = quantidade;
-        this._valor = valor;
-    }
+    // Definindo propriedades da classe, tipo de dados
+    constructor(private _data: Date, private _quantidade: number, private _valor: number){}
 
     get data(){
         return this._data;
