@@ -1,7 +1,4 @@
-class MensagemView {
-    constructor(seletor) {
-        this._elemento = document.querySelector(seletor);
-    }
+class MensagemView extends View {
     udpate(model) {
         this._elemento.innerHTML = this.template(model);
     }
